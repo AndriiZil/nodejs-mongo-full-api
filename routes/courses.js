@@ -5,7 +5,7 @@ const {
     addCourse,
     updateCourse,
     deleteCourse
-} = require('../controllers/Courses');
+} = require('../controllers/courses');
 
 const Course = require('../models/Course');
 const advancedResults = require('../middleware/advancedResults');
