@@ -66,7 +66,7 @@ ReviewSchema.post('save', async function () {
 
 // Call getAverageRating before remove
 ReviewSchema.pre('remove', async function () {
-    await this.constructor.getAverageCost(this.bootcamp);
+    await this.constructor.getAverageRating(this.bootcamp);
 });
 
 module.exports = model('Review', ReviewSchema);
